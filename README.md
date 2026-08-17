@@ -1,6 +1,8 @@
 # DeepSeek Desktop Client（DeepSeek Harness 桌面客户端）
 
-把 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）打包成 Windows 桌面客户端的源码与安装包构建套件。
+> ⚠️ **非官方项目声明**：本项目是社区制作的第三方桌面客户端，**与 DeepSeek（深度求索）无任何隶属、赞助或背书关系**。"DeepSeek Harness" 仅作为其开源产品名称作说明性引用（nominative use）。本项目**不使用、不包含** DeepSeek 的任何商标标识（如鲸鱼 Logo），应用图标为原创设计。
+
+把 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`，MIT 开源）打包成 Windows 桌面客户端的源码与安装包构建套件。
 
 ## 功能特性
 
@@ -8,7 +10,7 @@
 - **关闭行为设置**：托盘菜单三选一（每次询问 / 后台运行托盘 / 退出并停止），持久化保存
 - **托盘后台运行**：窗口隐藏到系统托盘，服务器继续运行；再次双击图标自动唤醒窗口
 - **自动管理服务端**：启动时自动拉起/复用 `dsh web` 服务器，退出时自动停止
-- **黑色鲸鱼图标**：任务栏/托盘/快捷方式（图标来自 DeepSeek 官方 favicon，见下方声明）
+- **原创终端图标**：任务栏/托盘/快捷方式使用原创设计图标（终端提示符图形，无第三方品牌元素）
 - **单实例 + 跨进程唤醒**、故障日志、WebView2 缺失时回退 Edge 应用窗口
 
 ## 目录结构
@@ -45,10 +47,10 @@ build/         安装包构建脚本
 
 ## 第三方组件与商标声明
 
-- **DeepSeek 鲸鱼图标**：取自 DeepSeek 官方 favicon（`deepseek-harness/apps/web`），版权与商标归 DeepSeek 所有，本项目仅用于个人集成展示，不用于商业分发；如 DeepSeek 方要求将移除
-- **Microsoft WebView2 SDK**：`client/WebView2/` 下三个 DLL 按微软 WebView2 SDK 许可证再分发（`Microsoft.Web.WebView2.Core.dll`、`WinForms.dll` 取自 NuGet 包，`WebView2Loader.dll` 为官方分发件）
-- **Node.js**：安装包内嵌官方便携版（构建时下载），遵循其自身许可证
-- **DeepSeek Harness**：安装包载荷来自官方发布 tarball（MIT）
+- **应用图标**：本项目原创设计（终端提示符图形），不包含任何第三方商标元素；见 `client/icon-src.svg`
+- **Microsoft WebView2 SDK**：`client/WebView2/` 下三个 DLL 按微软 WebView2 SDK 许可证再分发（许可证全文随包附于 `client/WebView2/LICENSE.txt`）
+- **Node.js**：安装包内嵌官方便携版（构建时下载，自带 LICENSE），遵循其自身许可证
+- **DeepSeek Harness**：安装包载荷来自官方发布 tarball（MIT，各包自带 LICENSE）
 
 ## 安全说明
 
