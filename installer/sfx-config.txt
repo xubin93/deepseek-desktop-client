@@ -1,0 +1,6 @@
+;!@Install@!UTF-8!
+Title="DeepSeek 桌面客户端 安装向导"
+BeginPrompt="即将安装 DeepSeek 桌面客户端（含服务端与运行时，约 50 MB）。是否继续？"
+RunProgram="install-launcher.cmd"
+GUIMode="2"
+;!@InstallEnd@!
