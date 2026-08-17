@@ -168,7 +168,7 @@ if (Test-Path (Join-Path $wv2Dir 'Microsoft.Web.WebView2.Core.dll')) {
                 $trayIcon = Get-IconFromSize $srcImg 32
                 $srcImg.Dispose()
                 $form.Icon = $formIcon
-                Write-Log '窗口图标已应用（256px 鲸鱼）'
+                Write-Log '窗口图标已应用（256px 应用图标）'
             } catch {
                 Write-Log "图标生成失败：$($_.Exception.Message)"
             }
